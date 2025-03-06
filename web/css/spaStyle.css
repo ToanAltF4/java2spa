@@ -1,0 +1,429 @@
+/* spaStyle.css */
+
+/* Định dạng chung cho body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0; 
+    padding: 0;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+}
+
+/* =========================
+   Phần dành cho Login
+   ========================= */
+.login-container {
+    background: #fff;
+    width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4caf50; /* tông xanh spa */
+}
+
+.login-container label {
+    display: block;
+    margin: 8px 0 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-login:hover {
+    background: #43a047;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   Phần dành cho Register
+   ========================= */
+.register-container {
+    background-color: #fff;
+    width: 400px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4caf50;
+}
+
+.register-container label {
+    display: block;
+    margin: 8px 0 5px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 10px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-register:hover {
+    background: #43a047;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #4caf50;
+    text-decoration: none;
+}
+
+/* spaStyle.css */
+
+/* Phần CSS cho serviceList.jsp */
+.service-list-container {
+    width: 80%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.service-list-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4caf50;
+}
+
+.search-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.search-form select, .search-form input[type="text"] {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.search-btn {
+    padding: 7px 12px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.search-btn:hover {
+    background: #43a047;
+}
+
+.service-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+.service-table th, .service-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.service-table th {
+    background-color: #f5f5f5;
+}
+
+.action-form {
+    display: inline;
+}
+.action-form input[type="submit"] {
+    background: #ff9800;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: #fff;
+    cursor: pointer;
+    margin: 2px;
+}
+.action-form input[type="submit"]:hover {
+    background: #fb8c00;
+}
+
+/* ... Có thể thêm style cho editService.jsp, createService.jsp, v.v. ... */
+
+/* spaStyle.css (thêm cho dashboard) */
+
+.dashboard-container {
+    width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.dashboard-container h2 {
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+.dashboard-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dashboard-nav li {
+    margin: 10px 0;
+}
+.dashboard-nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+.dashboard-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container chung cho form (edit, create) */
+.form-container {
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4caf50; /* tông xanh spa */
+}
+
+/* Label và input */
+.form-container label {
+    display: block;
+    margin: 8px 0 5px;
+    font-weight: bold;
+}
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Nút submit */
+.form-container input[type="submit"],
+.form-container button {
+    padding: 10px 15px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-container input[type="submit"]:hover,
+.form-container button:hover {
+    background: #43a047;
+}
+
+/* Link hủy, quay về, v.v. */
+.cancel-link, .back-link {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #4caf50;
+}
+.cancel-link:hover, .back-link:hover {
+    text-decoration: underline;
+}
+
+/* Thêm style cho đoạn p (thông báo lỗi...) */
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Form container */
+.form-container {
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+.form-container h2 {
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+.form-container label {
+    display: block;
+    margin: 8px 0 5px;
+    font-weight: bold;
+}
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="datetime-local"],
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-container input[type="submit"] {
+    padding: 10px 15px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-container input[type="submit"]:hover {
+    background: #43a047;
+}
+.success-message {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}
+.cancel-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #4caf50;
+}
+.cancel-link:hover {
+    text-decoration: underline;
+}
+
+/* Bảng */
+.table-container-staffAppointment {
+    background: #fff;
+    width: 80%;
+    max-width: 1000px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+.table-container-staffAppointment h2 {
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+.table-container {
+    background: #fff;
+    width: 600px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+.table-container h2 {
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+.service-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.service-table th, .service-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.service-table th {
+    background-color: #f5f5f5;
+}
+/* Khung hiển thị lỗi */
+.error-container {
+    width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.error-container h2 {
+    color: #e53935; /* Màu đỏ */
+    margin-bottom: 15px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Link quay về */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #4caf50;
+    text-decoration: none;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
